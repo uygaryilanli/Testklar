@@ -1,0 +1,16 @@
+:root { --paper: #F3EFE6; --ink: #1C1B19; --muted: #6F6A60; --accent: #0F5C63; --hair: #D9D2C3; }
+@media (prefers-color-scheme: dark) { :root { --paper: #161513; --ink: #EDE8DD; --muted: #A39D91; --accent: #6FB3B8; --hair: #34312C; } }
+* { box-sizing: border-box; }
+body { margin: 0; background: var(--paper); color: var(--ink); font: 17px/1.6 -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; }
+main { max-width: 680px; margin: 0 auto; padding: 48px 20px 80px; }
+.eyebrow { font-size: 13px; letter-spacing: .12em; text-transform: uppercase; color: var(--muted); margin: 0 0 8px; }
+h1 { font-family: "Iowan Old Style", Georgia, serif; font-weight: 400; font-size: 44px; line-height: 1.1; margin: 0 0 24px; }
+h2 { font-family: "Iowan Old Style", Georgia, serif; font-weight: 400; font-size: 26px; margin: 40px 0 8px; padding-top: 16px; border-top: 1px solid var(--ink); }
+h3 { font-size: 17px; margin: 24px 0 4px; }
+a { color: var(--accent); }
+nav { display: flex; gap: 20px; font-size: 15px; margin-bottom: 40px; }
+nav a { text-decoration: none; }
+.lang { color: var(--muted); font-size: 15px; }
+footer { margin-top: 64px; padding-top: 16px; border-top: 1px solid var(--hair); font-size: 14px; color: var(--muted); }
+h1 { overflow-wrap: break-word; hyphens: auto; }
+@media (max-width: 480px) { h1 { font-size: 34px; } }
